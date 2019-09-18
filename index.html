@@ -19,7 +19,7 @@
 <body class="markdown-body">
 <h1>魏川凯</h1>
 <h2>个人信息</h2>
-<p><strong>基本信息：</strong>  男 | 26岁 | 山西 | 汉族 | 已婚 |</p>
+<p><strong>基本信息：</strong>  男 | 26岁 | 山西 | 汉族 | 已婚 | 本科</p>
 <p><strong>联系方式：</strong>  176-1060-5229 | <a href='mailto:838684740@qq.com' target='_blank' class='url'>838684740@qq.com</a> |</p>
 <p><strong>工作经验：</strong>  4年 </p>
 <h2>求职意向</h2>
@@ -36,44 +36,49 @@
 
 </ul>
 <h2>工作经历</h2>
-<p><strong>北京宝兰德软件股份有限公司</strong>      |    <strong>前端工程师</strong> |  <strong>2017.12—至今</strong> </p>
-<p><strong>云洗电子商务有限公司 </strong>           |         <strong>Java工程师</strong> |  <strong>2015.10—2017.11</strong> </p>
+<p><strong>北京宝兰德软件股份有限公司</strong>    |      <strong>前端工程师</strong> |  <strong>2017.12—至今</strong> </p>
+<p><strong>云洗电子商务有限公司 </strong>               |     <strong>Java工程师</strong> |  <strong>2015.10—2017.11</strong> </p>
 <h2>项目经验</h2>
 <h3>（一）一款智能运维产品</h3>
 <p> <strong>项目简介：</strong> 
 公司运维产品线的主力产品，依托人工智能，为客户提供&quot;监管控&quot;三位一体的运维服务。产品的Web应用整合公司多种运维产品，为用户提供统一的运维视窗，方便用户快速了解系统概况，快速完成运维操作，及时解决各项系统问题。</p>
 <p> <strong>责任描述：</strong> </p>
 <ol start='' >
-<li>参与项目的架构设计、需求分析实现、文档编写</li>
-<li>主要负责产品前端部分的通用组件的实现，和部分功能页面实现3、也参与实现了部分的后台web服务</li>
+<li>负责项目的架构设计、需求分析实现、文档编写</li>
+<li>负责产品前端部分的通用组件的实现，和大部分功能页面实现</li>
+<li>对项目整体进行优化，使用Jenkins对项目持续集成</li>
+<li>与多个子产品组沟通，协调，完善接口文档，并迁移至Yapi，方便后续开</li>
 
 </ol>
 <p><strong>技术描述</strong> </p>
 <ol start='' >
 <li>使用Vue CLI提供脚手架，基础配置构建功能</li>
-<li>使用Vue+Vuex+Vue Router+Axios提供应用的功能</li>
-<li>使用Element UI提供基础组件功能</li>
-<li>图表部分使用了ECharts和自研的图表库</li>
-<li>基于WebSocket实现实时系统指标可视化展示</li>
-<li>实现了可拖拽缩放的高度自定义工作台功能，支持碰撞检测和吸附效果</li>
-<li>基于OAuth2.0协议的统一认证服务 </li>
+<li>使用Vue+Vuex+Vue Router+Axios+Element UI提供基础功能</li>
+<li>对Axios进行封装，实现取消重复请求，路由跳转取消当前页面请求，全局请求状态管理等功能</li>
+<li>统计类的图表使用Echarts，关系类的图表使用自研可视化库，实现了较高性能的数据可视化功能</li>
+<li>基于WebSocket协议实现实时监控数据的更新</li>
+<li>实现了可拖拽缩放的高度自定义工作台功能，利用四叉树优化相邻面板的搜索，同时支持碰撞检测和吸附效果</li>
+<li>基于OAuth2.0协议的统一认证服务，提高系统的可伸缩性</li>
 
 </ol>
 <h3>（二）一个可视化图表库</h3>
 <p><strong>项目简介：</strong>
-为公司产品提供数据可视化解决方案。主要是针对复杂图结构的数据展示。目前已经被公司的多款产品使用，具有较高的兼容性，和不俗的性能，用户反映良好</p>
+为公司产品提供数据可视化解决方案。主要是针对复杂图结构的数据展示。目前已经被公司的多款产品使用，具有较高的兼容性，良好的性能表现，得到了用户的认可</p>
 <p><strong>责任描述：</strong> </p>
 <ol start='' >
-<li>参与项目的架构设计，技术调研，环境搭建，文档编写。</li>
-<li>负责有向图，树形图，力导向图等图表类型的实现</li>
+<li>独立负责项目的架构设计，技术调研，环境搭建，持续集成。</li>
+<li>负责有向图，树形图，力导向图，蜂窝图等图表类型的实现</li>
 
 </ol>
 <p><strong>技术描述</strong> </p>
 <ol start='' >
-<li>基于TypeScript+Babel+Rollup</li>
-<li>利用D3.js对SVG元素进行操作呈现</li>
+<li>基于TypeScript+Babel+Rollup开发</li>
+<li>利用D3.js对SVG元素进行操作，具有较高的性能表现</li>
 <li>基于D3.js提供的图表的基本功能</li>
 <li>输出格式有IIFE和ES Module两种</li>
+<li>利用分层布局算法(Sugiyama-style graph drawing)自动布局有向图，具有较好的美观度，同时也清晰的展示了节点间的关系</li>
+<li>为了避免污染全局内置对象，使用babel-plugin-transform-runtime进行代码转化，实例的方法使用Lodash补存扩展</li>
+<li>编写了Rollup插件，转化SVG图标，使其可以像使用JS类一样在代码中使用</li>
 
 </ol>
 <h3>（三）一款开源软件管理平台</h3>
@@ -101,6 +106,6 @@
 <p><strong>工作态度：</strong>
 具有较强的自我驱动力，喜欢有挑战的事物，同时也有良好的沟通能力。</p>
 <h2>教育经历</h2>
-<p>2012.09—2016.07 | 山西大学商务学院 | 本科 |</p>
+<p>2012.09—2016.07 | 山西大学商务学院 | 财务管理 | 本科 |</p>
 </body>
 </html>
