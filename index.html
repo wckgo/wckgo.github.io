@@ -5,108 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>wckgo.top</title>
-  <link href="https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.css" rel="stylesheet">
   <style>
     html, body {
       margin: 0 auto;
     }
     body {
+      width: 100%;
+      background-color: #f2f2f2;
+      font-family: mwf-segoeui-web,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .segment {
+      height: 15rem;
+      width: 100%;
+      background-color: #0f4c81;
+    }
+    h1, h2, footer {
       max-width: 900px;
     }
+    h1 {
+      font-size: 5rem;
+      margin: 1rem auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 10rem auto 0;
+    }
+    footer {
+      color: #616161;
+      font-size: 0.5rem;
+      margin: 2rem auto 0;
+    }
+    article {
+      margin-top: 10rem;
+    }
   </style>
-  
+
 </head>
-<body class="markdown-body">
-<h1>魏川凯</h1>
-<h2>个人信息</h2>
-<p><strong>基本信息：</strong>  男 | 26岁 | 山西 | 汉族 | 已婚 | 本科</p>
-<p><strong>联系方式：</strong>  176-1060-5229 | <a href='mailto:838684740@qq.com' target='_blank' class='url'>838684740@qq.com</a> |</p>
-<p><strong>工作经验：</strong>  4年 </p>
-<h2>求职意向</h2>
-<p><strong>期望职位：</strong>  前端工程师 </p>
-<p><strong>期望地点：</strong>  北京 | 全职 | 一周内到岗</p>
-<h2>技能清单</h2>
-<ul>
-<li>熟悉JavaScript，HTML，CSS，TypeScript等常见的编程语言</li>
-<li>熟悉Vue生态的常见技术，如Vue.js，Vuex，Vue Router，Axios</li>
-<li>熟悉常用的可视化技术，如D3.js，Echarts，SVG，Canvas</li>
-<li>从零参与构建团队前端技术栈，了解前端工程化(webpack/Rollup.js/Babel)，独立负责搭建维护团队npm仓库</li>
-<li>熟悉常见的后台技术(Java/SSM/MySQL/Nginx等)，也有一定的Linux使用经验</li>
-<li>具有丰富的跨部门合作沟通经验与推进能力，获得了公司&quot;最佳员工奖&quot;。</li>
-
-</ul>
-<h2>工作经历</h2>
-<p><strong>北京宝兰德软件股份有限公司</strong>    |      <strong>前端工程师</strong> |  <strong>2017.12—至今</strong> </p>
-<p><strong>云洗电子商务有限公司 </strong>               |     <strong>Java工程师</strong> |  <strong>2015.10—2017.11</strong> </p>
-<h2>项目经验</h2>
-<h3>（一）一款智能运维产品</h3>
-<p> <strong>项目简介：</strong> 
-公司运维产品线的主力产品，依托人工智能，为客户提供&quot;监管控&quot;三位一体的运维服务。产品的Web应用整合公司多种运维产品，为用户提供统一的运维视窗，方便用户快速了解系统概况，快速完成运维操作，及时解决各项系统问题。</p>
-<p> <strong>责任描述：</strong> </p>
-<ol start='' >
-<li>负责项目的架构设计、需求分析实现、文档编写</li>
-<li>负责产品前端部分的通用组件的实现，和大部分功能页面实现</li>
-<li>对项目整体进行优化，使用Jenkins对项目持续集成</li>
-<li>与多个子产品组沟通，协调，完善接口文档，并迁移至Yapi，方便后续开</li>
-
-</ol>
-<p><strong>技术描述</strong> </p>
-<ol start='' >
-<li>使用Vue CLI提供脚手架，基础配置构建功能</li>
-<li>使用Vue+Vuex+Vue Router+Axios+Element UI提供基础功能</li>
-<li>对Axios进行封装，实现取消重复请求，路由跳转取消当前页面请求，全局请求状态管理等功能</li>
-<li>统计类的图表使用Echarts，关系类的图表使用自研可视化库，实现了较高性能的数据可视化功能</li>
-<li>基于WebSocket协议实现实时监控数据的更新</li>
-<li>实现了可拖拽缩放的高度自定义工作台功能，利用四叉树优化相邻面板的搜索，同时支持碰撞检测和吸附效果</li>
-<li>基于OAuth2.0协议的统一认证服务，提高系统的可伸缩性</li>
-<li>利用ScriptExtHtmlWebpackPlugin和配置splitChunks，优化webpack分包策略，提高性能</li>
-
-</ol>
-<h3>（二）一个可视化图表库</h3>
-<p><strong>项目简介：</strong>
-为公司产品提供数据可视化解决方案。主要是针对复杂图结构的数据展示。目前已经被公司的多款产品使用，具有较高的兼容性，良好的性能表现，得到了用户的认可</p>
-<p><strong>责任描述：</strong> </p>
-<ol start='' >
-<li>独立负责项目的架构设计，技术调研，环境搭建，持续集成。</li>
-<li>负责有向图，树形图，力导向图，蜂窝图等图表类型的实现</li>
-
-</ol>
-<p><strong>技术描述</strong> </p>
-<ol start='' >
-<li>基于TypeScript+Babel+Rollup开发</li>
-<li>利用D3.js对SVG元素进行操作，具有较高的性能表现</li>
-<li>基于D3.js提供的图表的基本功能</li>
-<li>输出格式有IIFE和ES Module两种</li>
-<li>利用分层布局算法(Sugiyama-style graph drawing)自动布局有向图，具有较好的美观度，同时也清晰的展示了节点间的关系</li>
-<li>为了避免污染全局内置对象，使用babel-plugin-transform-runtime进行代码转化，实例的方法使用Lodash补存扩展</li>
-<li>编写了Rollup插件，转化SVG图标，使其可以像使用JS类一样在代码中使用</li>
-
-</ol>
-<h3>（三）一款开源软件管理平台</h3>
-<p><strong>项目简介</strong> 
-公司运维产品线中的一个子产品，主要是为系统中使用的开源组件提供方便的管理服务，自动发现系统中的开源组件，提供开源组件版本，漏洞等信息，提供知识库服务，提供相关组件的指标监控，启停部署等功能。</p>
-<p><strong>责任描述</strong> </p>
-<ol start='' >
-<li>参与项目的架构设计、技术调研，环境搭建，文档编写</li>
-<li>主要负责产品前端部分的通用组件的实现，和部分功能页面实现</li>
-<li>也参与实现了部分组件的自动发现脚本</li>
-
-</ol>
-<p><strong>技术描述</strong></p>
-<ol start='' >
-<li>使用Vue CLI提供脚手架，基础配置构建功能</li>
-<li>使用Vue+Vuex+Vue Router+Axios提供应用的功能</li>
-<li>使用Element UI提供基础组件功能</li>
-<li>图表部分使用了ECharts和自研的图表库</li>
-<li>基于WebSocket实现实时系统指标可视化展示 </li>
-
-</ol>
-<h2>自我评价</h2>
-<p><strong>自我定位：</strong>
-期望在前端方向有较深的发展，同时Web服务技术领域有全面的发展。也要培养一定的产品思维，能参与到产品的整个生命周期中。</p>
-<p><strong>工作态度：</strong>
-具有较强的自我驱动力，喜欢有挑战的事物，同时也有良好的沟通能力。</p>
-<h2>教育经历</h2>
-<p>2012.09—2016.07 | 山西大学商务学院 | 财务管理 | 本科 |</p>
+<body>
+<article>
+  <h1>WCKGO</h1>
+  <section class="segment"></section>
+  <h2>Just beat it, bicycle change motorcycle.</h2>
+  <footer>Copyright © 2020 wckgo All rights reserved.</footer>
+</article>
 </body>
 </html>
